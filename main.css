@@ -1,0 +1,377 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+/*---------------------------------MAIN PAGE------------------------------------------------------*/
+section{
+    position:relative;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    min-height:100vh;
+    background:url(/images/scrolling.jpg);
+    /* background-blend-mode: screen; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+/* #overlay{
+    position:absolute;
+    top:0;
+    bottom: 0; 
+    left: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.26);
+    width:100%;
+    height:100%;
+    z-index: 100;
+} */
+@media only screen and (max-width: 600px) {
+   .menu-bar-mobile{
+       display:inline;
+   }
+}
+header{ 
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1000; 
+}
+header .logo{
+    position:relative;
+    color: white;
+    text-decoration: none;
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+header .menu-bar-mobile{
+    display:none;
+}
+.toggle{
+    display:flex;
+}
+
+header .menu-bar-mobile{
+    position:absolute;
+    top:30px;
+    right:0;
+    width:40px;
+    height:40px;
+    background:url(/images/menu.png);
+    background-size: 30px;
+    /* background-position: center; */
+    background-repeat:no-repeat;
+    cursor:pointer;
+    
+}
+header .menu-bar-mobile:last-child{
+    justify-self: end;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+
+}
+.title-content {
+    
+    width:50%;
+    min-width:800px;
+}
+.big-square h1{
+    
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-left: 20px;
+    align-self: center;
+    padding-top: 20px;
+    letter-spacing: 3px;
+}
+
+.big-square{
+    background-color: #8f7765;
+    width:23em;
+    position:absolute;
+    left:70px;
+    top:100px;
+    min-height: 60vh;
+
+}
+
+.small-square{
+    /* background-color: #c0bcb5; */
+    width:24%;
+    position:absolute;
+    left: 8em;
+    top:16em;
+    min-height: 40px;
+    line-height: 20px;
+ 
+}
+.small-square p{
+    text-align: end;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-size: 15px;
+    width:19em;
+   
+}
+
+.big-square span{
+    
+    color: #2f251e;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+}
+.social-media{
+position:absolute;
+right:0;
+bottom:70px;
+background-color: black;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+cursor::pointer;
+}
+.spacing img{
+    padding-top:0px;
+}
+.spacing img:first-child:hover{
+background-color: #76787ac7;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+}
+.button-started a{
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+}
+.button-started{
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    bottom:10em;
+    left:150px;
+    height:9%;
+    width:13em;
+    text-align: center;
+    padding-top: 10px;
+    border:2px solid black
+   
+}
+
+/* --------------------------------------FIRST PAGE------------------------------------------------------  */
+.whole-container{
+    width:100%;
+    background-image:url("https://images.unsplash.com/photo-1609793002435-f78947a5cea8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80");
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container{
+    
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); 
+    padding-left: 6%;
+    padding-right: 6%;
+    overflow:hidden;
+    width: 100%;
+   
+     
+} 
+.grid-img {
+    transition: transform 750ms cubic-bezier(.5,0,.5,1), opacity 250ms linear;
+    
+    width:100%;
+}
+.grid-img img{
+    background-position: center ;
+    object-fit: cover;
+}
+.grid-img:hover{
+    transform:scale(1.2);
+    opacity:0.75;
+}
+.big-text-container{
+    position:absolute;
+    top:9em;
+    left:7em;
+    height:40%;
+    background-color: rgba(20, 20, 20, 0.918);
+    width:19em;
+}
+.food-section{
+    width:100%;
+}
+
+@media only screen and (max-width: 600px) {
+   
+  }
+.big-text-container2{
+    position:absolute;
+    top:9em;
+    left:31em;
+    height:40%;
+    background-color: rgba(20, 20, 20, 0.918);
+    width:300px;
+}
+.big-text-container3{
+    position:absolute;
+    top:150px;
+    right:110px;
+    height:40%;
+    background-color: rgba(20, 20, 20, 0.918);
+    width:300px;
+}
+.big-text h1{
+    color:white;
+    text-align: center;
+    font-size: 4em;
+}
+.big-text p{
+    color:#cccccc;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 10px;
+}
+@media  (max-width: 480px) {
+
+.nav-bar a{
+    display:none;
+}
+.grid-container{
+    width:60%;
+    height:40%;
+}
+}
+
+/* -----------------------------     FOOD HUNTING PAGE------------------------------------------------------ */
+/* .food-background{
+    
+    background-size: cover;
+    min-height:100vh;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #5f4936;
+   
+}
+.food-header{
+    height:50px;
+    color: blanchedalmond;
+    font-size: 30px;
+}
+
+.food-screen-box{
+    width:80%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top:10%;
+    border: 4px solid white;
+}
+.food-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); 
+    width: 100%;
+   
+}
+ .food-section img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} 
+
+.dot {
+    height: 9px;
+    width: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+  .food-top-box{
+      border-bottom:4px white solid;
+      height: 20px;
+
+  }
+  .big-food-text-container{
+      position:absolute;
+      top:19em;
+      color:#c0bcb5;
+      background-color: rgba(0, 0, 0, 0.664);
+      width: 15em;
+      height: 9vh;
+      padding-top: .6%;
+      padding-left: .2%;
+      font-size: 13px;
+
+
+  }
+  .big-food-text-container1{
+    position:absolute;
+    bottom:3em;
+    color:#c0bcb5;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 15em;
+    height: 9vh;
+    padding-top: .6%;
+    padding-left: .2%;
+    font-size: 13px;
+
+
+}
+.big-food-text-container2{
+    position:absolute;
+    bottom:-14em;
+    color:#c0bcb5;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 15em;
+    height: 9vh;
+    padding-top: .6%;
+    padding-left: .2%;
+    font-size: 13px;
+
+
+} */
+/* -----------------------------     FOOD HUNTING PAGE------------------------------------------------------ */
+.big-box{
+    background-image: url(/foodhunting/header1.jpg);
+    height:70vh;
+    position:relative;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    /* background-blend-mode: screen; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+.grid-restaurant-container{
+    display:grid;
+    grid-template-columns: repeat(50% 50%);
+    width:100%;
+}
+.picture-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} 
+.restaurant-section, .restaurant-content{
+    width: 50%;
+}

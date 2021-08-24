@@ -1,0 +1,331 @@
+/* --------------------------------------------NEW CODE--------------------------------------------------- */
+.region-container {
+    height: 50px;
+    background-color: #89a670;
+    justify-content: center;
+    display: flex;
+    padding-left: 10em;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  .restaurant-title h1 {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 40px;
+  }
+  .region-nav-header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 20px;
+    height: 50px;
+  }
+  .region-nav-header a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+  }
+  .region-nav-header a:hover {
+    background-color: white;
+    color: black;
+  }
+  /* -------------------------------ALTER----------------------------------------   */
+  
+  body {
+    width: 100%;
+    margin: 0;
+    background-color: white;
+  }
+  .header-restaurant-container {
+    background-image: url("https://images.unsplash.com/photo-1583068320940-34edd88a5e87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1801&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+    height: 50vh;
+  }
+  .restaurant-title {
+    padding-left: 25em;
+    padding-top: 20px;
+  }
+  .topnav .search-container {
+    justify-content: center;
+  }
+  
+  .topnav input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 28em;
+  }
+  
+  .topnav .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  .overlay {
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 7px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .image img {
+    width: 100%;
+  }
+  
+  .main_container {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 3px 2px 7px 7px #a89e9e;
+  }
+  .caption {
+    padding-left: 10px;
+    padding-top: 0%;
+    height: 200px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    line-height: 0rem;
+  }
+  .caption h3 {
+    font-size: 10px;
+  }
+  .caption h3:first-of-type {
+    font-size: 20px;
+  }
+  .flex {
+    display: flex;
+  }
+  .rating-star {
+    padding-top: 14px;
+    padding-left: 7px;
+    height: 20px;
+  }
+  .two-nav-caption {
+    display: flex;
+    border-radius: 30px;
+  
+    height: 35px;
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+  .review {
+    background-color: #ebb810;
+    width: 50%;
+    padding-left: 25px;
+    padding-top: 15px;
+    border-right: 2px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .justify:hover {
+    background-color: #89a670;
+  }
+  .location {
+    background-color: rgb(236, 250, 109);
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .justify a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .greybg {
+    background-color: rgb(240, 240, 240);
+    background-image: url(/restoran/marble.png);
+    margin: 0px auto;
+  }
+  .box {
+    padding-left: 10px;
+  }
+  .footer {
+    display: flex;
+    background-color: rgba(43, 41, 41, 0.938);
+    margin-top: 20px;
+    padding-top: 25px;
+    height: 50px;
+    justify-content: center;
+  }
+  .details a {
+    text-decoration: none;
+    color: rgb(87, 84, 84);
+    padding: 16px;
+  }
+  .popout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 5px solid rgb(255, 189, 47);
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    height: 150px;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .popout.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .text {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+  }
+  .text p {
+    font-size: large;
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .button {
+    background-color: rgb(255, 189, 47);
+    color: white;
+    font-size: 16px;
+    width: 60%;
+    height: 40px;
+    margin-left: 80px;
+    border: none;
+    cursor: pointer;
+  }
+  .page {
+    margin-left: 45%;
+    margin-top: 20px;
+  }
+  .page button:hover {
+    color: black;
+  }
+  
+  .page button {
+    background-color: white;
+    color: rgb(255, 94, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .description {
+    margin: 30px;
+    text-align: center;
+  }
+  /* ---------------------FORM SECTION----------------- */
+  /* .background-form {
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff); */
+  
+  .background-form {
+    background-color: rgb(230, 200, 205);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  select {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    margin-left: 14%;
+  }
+  .contact-form {
+    background: rgba(248, 248, 248, 0.863);
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 70%;
+    height: 700px;
+  }
+  .contact-form .form-control {
+    border-radius: 1rem;
+  }
+  .contact-image {
+    text-align: center;
+  }
+  .contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+  }
+  .contact-form form {
+    padding: 14%;
+  }
+  .contact-form form .row {
+    margin-bottom: -7%;
+  }
+  .contact-form h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+  }
+  .contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btnContactSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+  }
+  
